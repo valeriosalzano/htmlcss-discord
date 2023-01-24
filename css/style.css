@@ -1,16 +1,5 @@
 /* debug */
 
-.debug main section .big{
-    background-color: lightblue;
-    height: 500px;
-}
-.debug main section .small{
-    background-color: lightpink;
-}
-#last-section .container{
-    height: 500px;
-    background-color: green;
-}
 footer{
     background-color: rgb(90, 90, 90);
 }
@@ -30,6 +19,7 @@ footer .bottom.container{
 #footer-logo,#footer-register{
     background-color: rgb(252, 116, 116);
 }
+
 /* CSS rules */
 *{
     margin: 0;
@@ -39,24 +29,28 @@ footer .bottom.container{
 .flexed{
     display: flex;
 }
+.container.reverse-wrapped{
+    flex-wrap: wrap-reverse;
+}
 .sized{
     max-width: 1170px;
     width: 80%;
     margin: auto;
 }
-.button{
+.button a{
+    text-decoration-line: none;
     padding: 10px 15px;
     border-radius: 25px;
 }
-
-.black.button{
-    background-color: black;
-    color:white;
-}
-.white.button{
+.white.button a{
     background-color: white;
     color: black;
 }
+.black.button a{
+    background-color: black;
+    color:white;
+}
+
 /* header */
 header{
     background-color: #255EE9;
@@ -90,21 +84,26 @@ header{
     header #jumbotron{
         background: #255EE9 url("../img/jumbo.png") center;
         background-size: cover;
-        height: 500px;
+        min-height: 500px;
         padding: 50px 0;
     }
     header #jumbotron .container{
         color: white;
         text-align: center;
+
         width: 50%;
         margin:auto;
         padding: 100px 0 0;
+    }
+    header p{
+        line-height: calc(19.3px + 1.5vw);
     }
     #jumbotron h1, #jumbotron p{
         margin-bottom: 30px;
     }
     #jumbotron .container > span{
-        margin: 0 10px;
+        display: inline-block;
+        padding: 15px 10px;
     }
     #download-arrow::after{
         content: '\2193';
@@ -113,17 +112,35 @@ header{
 
 /* main */
 main section{
+    text-align: center;
     padding: 50px 0;
 }
-main section .big.column{
-    width: 60%;
+main section .container{
+    flex-wrap: wrap;
 }
-main section .small.column{
+main h2{
+    margin-bottom: 50px;
+}
+main p{
+    line-height: calc(12px + 1.5vw);
+}
+main img{
+    width: 100%;
+}
+main .img.column{
+    flex-grow: 1;
+    width: 60%;
+    min-width: 400px;
+}
+main .text.column{
+    flex-grow: 1;
     width: 40%;
+    padding-top: 40px;
 }
 main section:nth-of-type(2n){
     background-color: lightgrey;
 }
+
 /* footer */
     /* top */
     footer{
