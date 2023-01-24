@@ -1,12 +1,5 @@
 /* debug */
 
-.debug header #jumbotron{
-    background-color: yellow;
-}
-.debug header #jumbotron .container{
-    height: 400px;
-    background-color: blue;
-}
 .debug main section .big{
     background-color: lightblue;
     height: 500px;
@@ -95,12 +88,27 @@ header{
     }
     /* bottom */
     header #jumbotron{
+        background: #255EE9 url("../img/jumbo.png") center;
+        background-size: cover;
         height: 500px;
         padding: 50px 0;
     }
     header #jumbotron .container{
+        color: white;
+        text-align: center;
         width: 50%;
         margin:auto;
+        padding: 100px 0 0;
+    }
+    #jumbotron h1, #jumbotron p{
+        margin-bottom: 30px;
+    }
+    #jumbotron .container > span{
+        margin: 0 10px;
+    }
+    #download-arrow::after{
+        content: '\2193';
+        font-size: bold;
     }
 
 /* main */
