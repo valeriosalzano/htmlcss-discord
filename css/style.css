@@ -153,7 +153,6 @@ main .stars-text{
         /* footer top container */
         footer .top.container{
             padding-bottom: 40px;
-            border-bottom: 1px solid lightgray;
             flex-wrap: wrap;
             border-bottom: 2px solid lightgray;
         }
@@ -164,8 +163,12 @@ main .stars-text{
             padding: 30px;
         }
         footer .big.column h3{
+            font-size: 30px;
             color: #7289DA;
             margin-bottom: 20px;
+        }
+        footer .language{
+            margin: 20px 0;
         }
         footer .language>span{
             color: white;
@@ -178,6 +181,9 @@ main .stars-text{
             vertical-align: text-top;
             font-weight: bold;
             content: '\02C5';
+        }
+        .social-icons a{
+            margin: 0 10px 0 0;
         }
         /* footer top small columns */
         footer .top.container .small-columns{
