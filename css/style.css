@@ -1,11 +1,5 @@
 /* debug */
 
-.debug header{
-    background-color: red
-}
-.debug header .sized>*{
-    background-color: orange;
-}
 .debug header #jumbotron{
     background-color: yellow;
 }
@@ -57,19 +51,32 @@ footer .bottom.container{
     width: 80%;
     margin: auto;
 }
+.button{
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.black.button{
+    background-color: black;
+    color:white;
+}
+.white.button{
+    background-color: white;
+    color: black;
+}
 /* header */
+header{
+    background-color: #255EE9;
+}
     /* top */
     header .top.container{
-        padding: 20px 0;
+        height: 100px;
+        padding: 35px 0;
+        justify-content:space-between;
         align-items: center;
     }
     #header-logo{
-        flex-grow: 1;
-        padding: 10px 0;
-    }
-    header nav{
-        flex-grow: 4;
-        padding: 10px 0;
+        height: 100%;
     }
     nav ul.menu{
         list-style: none;
@@ -81,12 +88,10 @@ footer .bottom.container{
     }
     nav .menu a{
         text-decoration: none;
-        color: black;
+        color: white;
     }
     #header-login{
         text-align: end;
-        flex-grow: 1;
-        padding: 10px 0;
     }
     /* bottom */
     header #jumbotron{
