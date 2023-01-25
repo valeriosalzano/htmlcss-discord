@@ -1,5 +1,21 @@
 /* debug */
 
+.debug section{
+    position: relative;
+}
+.debug section::before{
+    display: block;
+    height: 25px;
+    width: 100%;
+    content: '';
+    mask-image: url(../img/wave.svg);
+    /* content: url(../img/wave.svg); */
+    filter: opacity(0.04);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* CSS rules */
 *{
     margin: 0;
@@ -54,15 +70,16 @@ header{
     }
     nav ul.menu{
         list-style: none;
-        text-align: center;
+        text-align: justify;
     }
     nav .menu li{
         display: inline-block;
-        margin: 0 10px;
+        margin: 0 10px 5px;
     }
     nav .menu a{
         text-decoration: none;
         color: white;
+        padding: 5px;
     }
     #header-login{
         text-align: end;
@@ -77,13 +94,12 @@ header{
     header #jumbotron .container{
         color: white;
         text-align: center;
-
         width: 50%;
         margin:auto;
         padding: 100px 0 0;
     }
     header p{
-        line-height: calc(19.3px + 1.5vw);
+        line-height: calc(1em + 1.5vw);
         margin: 30px 0;
     }
     #jumbotron .container > span{
@@ -107,7 +123,7 @@ main h2{
     margin-bottom: 50px;
 }
 main p{
-    line-height: calc(12px + 1.5vw);
+    line-height: calc(1em + 1.5vw);
 }
 main img{
     width: 100%;
@@ -123,7 +139,7 @@ main .text.column{
     padding-top: 40px;
 }
 main section:nth-of-type(2n){
-    background-color: lightgrey;
+    background-color: #F2F2F2
 }
 main .stars-text{
     font-size: calc(18px + 0.5vw);
