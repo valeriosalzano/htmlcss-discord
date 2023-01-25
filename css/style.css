@@ -130,7 +130,7 @@ main img{
 main .img.column{
     flex-grow: 1;
     width: 60%;
-    min-width: 400px;
+    min-width: 350px;
 }
 main .text.column{
     flex-grow: 1;
