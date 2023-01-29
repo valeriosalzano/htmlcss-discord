@@ -207,7 +207,7 @@ main .references a{
 /* careers section */
 main .wave{
     color: black;
-    height: 80px;
+    height: 100px;
     width: 100%;
     filter: opacity(0.04);
     background: url("../../img/wave.svg") no-repeat center;
